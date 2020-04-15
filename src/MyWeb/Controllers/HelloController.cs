@@ -23,5 +23,16 @@ namespace MyWeb.Controllers {
                 }
             };
         }
+
+        [HttpGet]
+        public Dictionary<int, object> Int() {
+            return new Dictionary<int, object> {
+                [1] = 100,
+                [2] = new {
+                    B1 = 100,
+                    B2 = 100
+                }
+            };
+        }
     }
 }
